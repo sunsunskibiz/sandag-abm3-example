@@ -125,7 +125,7 @@ def test_sandag_abm3_progressive(use_sharrow):
         output_dir=out_dir,
         settings=settings,
     )
-    state.import_extensions("../extensions")
+    state.import_extensions("extensions")
     state.filesystem.persist_sharrow_cache()
     state.logging.config_logger()
 
